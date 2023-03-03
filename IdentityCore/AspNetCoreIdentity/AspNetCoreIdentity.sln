@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middlewares", "Middlewares", "{28408253-40DC-4362-BBF4-D086DDCE328C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solid", "Solid", "{144AECB4-422E-4139-BC14-0F048CA1BAEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MediatR", "MediatR", "{7F621190-BE97-45C7-B2D4-4A72D41FB133}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WithMongoDB", "WithMongoDB", "{D0B599F2-F84A-4443-AAAC-9696168F27BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{9C7D326C-8E6B-4F5B-BF46-E0A6FD2073D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoIdentity", "src\DemoIdentity\DemoIdentity.csproj", "{F385436C-8424-419D-8161-59D39E8CB3D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F385436C-8424-419D-8161-59D39E8CB3D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F385436C-8424-419D-8161-59D39E8CB3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F385436C-8424-419D-8161-59D39E8CB3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F385436C-8424-419D-8161-59D39E8CB3D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F385436C-8424-419D-8161-59D39E8CB3D1} = {9C7D326C-8E6B-4F5B-BF46-E0A6FD2073D5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59384222-5000-4794-BC03-80B2849FE45D}
+	EndGlobalSection
+EndGlobal

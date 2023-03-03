@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Página não encontrada!";
+}
+
+<h3>@ViewBag.ErrorMessage</h3>
+
+<hr/>
+<div class="jumbotron">
+    Por algum motivo não foi possível encontrar a página requisitada. Clique no botão abaixo e volte para a Home. Verifique a digitação e tente novamente, se for o caso ou contate o administrador!
+    <hr />
+    <a class="btn btn-warning" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+</div>
+
+
