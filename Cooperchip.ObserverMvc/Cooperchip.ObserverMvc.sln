@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooperchip.Observer.Mvc", "src\Cooperchip.Observer.Mvc\Cooperchip.Observer.Mvc.csproj", "{A260602F-0410-4067-ACD2-B92D31DCB1F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A260602F-0410-4067-ACD2-B92D31DCB1F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A260602F-0410-4067-ACD2-B92D31DCB1F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A260602F-0410-4067-ACD2-B92D31DCB1F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A260602F-0410-4067-ACD2-B92D31DCB1F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB8A3D6B-C2AE-438C-88D7-3B234F43BDD2}
+	EndGlobalSection
+EndGlobal
