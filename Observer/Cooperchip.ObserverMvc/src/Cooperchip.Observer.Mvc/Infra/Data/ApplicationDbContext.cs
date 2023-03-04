@@ -17,7 +17,9 @@ namespace Cooperchip.Observer.Mvc.Infra.Data
             {
                 property.SetColumnType("varchar(90)");
             }
+
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+            
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys())) relationship.DeleteBehavior = DeleteBehavior.ClientNoAction;
 
             base.OnModelCreating(modelBuilder);
@@ -25,3 +27,11 @@ namespace Cooperchip.Observer.Mvc.Infra.Data
         public DbSet<Mensagens> Mensagens { get; set; }
     }
 }
+
+//protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+//{
+//    configurationBuilder.Properties<string>().AreUnicode(false)
+//        .HaveMaxLength(90);
+
+//    base.ConfigureConventions(configurationBuilder);
+//}
