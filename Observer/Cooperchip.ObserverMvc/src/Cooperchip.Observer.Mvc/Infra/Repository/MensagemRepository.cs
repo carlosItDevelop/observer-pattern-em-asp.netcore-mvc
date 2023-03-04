@@ -1,4 +1,5 @@
 ﻿using Cooperchip.Observer.Mvc.Infra.Data;
+using Cooperchip.Observer.Mvc.Infra.UoW;
 using Cooperchip.Observer.Mvc.Models;
 using Cooperchip.Observer.Mvc.Services.Abstractions;
 using Microsoft.EntityFrameworkCore;
