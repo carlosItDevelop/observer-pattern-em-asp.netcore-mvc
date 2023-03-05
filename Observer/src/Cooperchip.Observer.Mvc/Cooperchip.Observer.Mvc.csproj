@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <UserSecretsId>5581c9bd-3e5e-4467-94cc-75ce21edf7f3</UserSecretsId>
+    <!--<Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cooperchip.Observer.Domain\Cooperchip.Observer.Domain.csproj" />
+    <ProjectReference Include="..\Cooperchip.Observer.Infra\Cooperchip.Observer.Infra.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+﻿@using Cooperchip.Observer.Domain.Entities;
+@model IEnumerable<Mensagens>
+
+<div class="dropdown" style="margin-left:20px;">
+    <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Notificações <span class="badge bg-danger">@ViewBag.Total</span>
+    </button>
+    <ul class="dropdown-menu" aria -labelledby="dropdownMenuButton1">
+        @{
+            foreach (var item in Model)
+            {
+                <li><a class="dropdown-item" href="#">@item.Mensagem</a></li>
+            }
+        }
+
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" asp-action="Index" asp-controller="Pedido"> Carregar todas</a></li>
+    </ul>
+</div>

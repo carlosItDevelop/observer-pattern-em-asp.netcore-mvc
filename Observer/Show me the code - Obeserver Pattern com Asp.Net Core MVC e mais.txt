@@ -1,0 +1,29 @@
+Show me the code
+
+Obeserver Pattern com Asp.Net Core 7 Mvc, EntityFramework Core 7 e mais
+
+- Observer Pattern;
+---------------------
+- Repository Pattern;
+- UnitOfWork Pattern - (I do SOLID);
+- FluentApi com EntityTypeConfiguration;
+- ApplyConfigurationFromAssembly para unificar Mappings das Entties;
+- Overide ConfigureConventions; - (Polimorfismo);
+- Services: Pedido, Email. SMS e WhatsApp;
+- Viewcomponent com TagHelp Personalizada - (DRY - Don't Reapete Yourserf);
+- Configuração de Ambientes e User Secrets  - (S do Solid);
+- DataTables com Bootstrap 5.1.3 - (Ferramentas Externas);
+- Notificações no Menu DropDown - (Notification Pattern);
+- Enun Extension - Extension Method - O do SOLID
+- Dependence Inject; - (D do SOLID);
+- ViewModel - MensagemViewModel - (DTO com mais de uma Model) - (MVVM e DTO);
+- MVC Pattern;
+-------------------------------------------------
+EntityFramework Core - (with Code First Approach);
+
+
+--------
+Link Udemy: https://www.udemy.com/user/carlos-alberto-dos-santos-34/
+Link Github (fonte)
+Link Telegram (Asp.Net Core ZeroAoNinja
+---------------------------------------
