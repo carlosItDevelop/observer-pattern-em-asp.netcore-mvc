@@ -25,7 +25,9 @@ namespace Cooperchip.Observer.Mvc
 
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddDbContext<ApplicationDbContext>(
+                options => 
+                    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddScoped<IPedidoService, PedidoService>();
             builder.Services.AddScoped<IMensagemRepository, MensagemRepository>();
