@@ -4,6 +4,6 @@ namespace Cooperchip.Observer.Domain.Repositories.UoW
 {
     public interface IUnitOfWork
     {
-        Task Commit();
+        Task<bool> Commit();
     }
 }

@@ -1,4 +1,5 @@
 using Cooperchip.Observer.Domain.Repositories;
+using Cooperchip.Observer.Domain.Services;
 using Cooperchip.Observer.Domain.Services.Abstractions;
 using Cooperchip.Observer.Domain.Services.Concretes;
 using Cooperchip.Observer.Infra.Data;
@@ -33,6 +34,7 @@ namespace Cooperchip.Observer.Mvc
             builder.Services.AddScoped<IMensagemRepository, MensagemRepository>();
             builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
             builder.Services.AddScoped<IObserverRepository, ObserverRepository>();
+            builder.Services.AddScoped<ITransactiondHandler, TransactionHandler>();
             #endregion
 
             #region: Pipiline

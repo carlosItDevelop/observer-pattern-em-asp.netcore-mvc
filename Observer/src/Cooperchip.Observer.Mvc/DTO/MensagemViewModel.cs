@@ -1,5 +1,7 @@
 ﻿using Cooperchip.Observer.Domain.Entities;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Cooperchip.Observer.Mvc.DTO
 {

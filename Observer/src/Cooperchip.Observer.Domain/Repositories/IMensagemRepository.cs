@@ -1,14 +1,13 @@
 ﻿using Cooperchip.Observer.Domain.Entities;
-using Cooperchip.Observer.Domain.Repositories.UoW;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Cooperchip.Observer.Domain.Repositories
 {
-    public interface IMensagemRepository : IUnitOfWork, IDisposable
+    public interface IMensagemRepository : IGenericRepository<Mensagens>
     {
         Task Add(Mensagens model);
+        Task AddNotas();
         Task<IEnumerable<Mensagens>> GetAllMensagens();
     }
 }

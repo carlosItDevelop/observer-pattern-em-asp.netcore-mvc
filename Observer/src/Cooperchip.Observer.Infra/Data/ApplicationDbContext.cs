@@ -1,10 +1,12 @@
 ﻿using Cooperchip.Observer.Domain.Entities;
+using Cooperchip.Observer.Domain.Repositories.UoW;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Cooperchip.Observer.Infra.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext, IUnitOfWork
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options){}
 
@@ -24,6 +26,14 @@ namespace Cooperchip.Observer.Infra.Data
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Mensagens> Mensagens { get; set; }
+
+        public async Task<bool> Commit()
+        {
+            var sucesso = await base.SaveChangesAsync() > 0;
+            // Podemos criar um evento.
+            return sucesso;
+        }
+
     }
 }
 

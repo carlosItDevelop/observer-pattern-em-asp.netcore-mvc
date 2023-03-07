@@ -16,7 +16,10 @@ Obeserver Pattern com Asp.Net Core 7 Mvc, EntityFramework Core 7 e mais
 - Notificações no Menu DropDown - (Notification Pattern);
 - Enun Extension - Extension Method - O do SOLID
 - Dependence Inject; - (D do SOLID);
+- Persistir dados;
+- Mensagem de Sucesso e Erro com ViewComponents;
 - ViewModel - MensagemViewModel - (DTO com mais de uma Model) - (MVVM e DTO);
+- FactorMessageViewModel static Method in "Helper static Class";
 - MVC Pattern;
 -------------------------------------------------
 EntityFramework Core - (with Code First Approach);
