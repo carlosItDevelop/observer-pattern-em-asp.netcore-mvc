@@ -34,7 +34,7 @@
 @if (TempData["Sucesso"] != null)
 {
     <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Parabéns!</strong> @Html.Raw(TempData["Sucesso"].ToString()).
+        <i class="fa fa-check"></i>&nbsp;&nbsp;<strong>Parabéns!</strong> @Html.Raw(TempData["Sucesso"].ToString()).
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
@@ -42,7 +42,7 @@
 @if (TempData["Erro"] != null)
 {
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Ops!</strong> @Html.Raw(TempData["Erro"].ToString()).
+        <i class="fa fa-ambulance"></i>&nbsp;&nbsp;<strong>Ops!</strong> @Html.Raw(TempData["Erro"].ToString()).
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
