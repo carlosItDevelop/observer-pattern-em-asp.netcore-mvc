@@ -30,7 +30,7 @@ namespace Cooperchip.Observer.Infra.Data
         public async Task<bool> Commit()
         {
             var sucesso = await base.SaveChangesAsync() > 0;
-            // Podemos criar um evento.
+            // Podemos lançar um evento.
             return sucesso;
         }
 
