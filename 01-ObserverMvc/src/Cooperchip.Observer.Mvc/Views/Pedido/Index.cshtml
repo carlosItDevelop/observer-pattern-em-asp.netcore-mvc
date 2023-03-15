@@ -1,0 +1,44 @@
+﻿@model PedidoViewModel
+@{
+    ViewData["Title"] = "Atualizar Pedido";
+    IList<SelectListItem> status = Enum.GetValues(typeof(StatusDoPedido)).Cast<StatusDoPedido>()
+    .Select(x => new SelectListItem()
+            {
+                Text = x.ToString(),
+                Value = ((int)x).ToString()
+            }).ToList();
+}
+
+<div class="container mt-5">
+    <div class="row">
+
+        <h2>Acompanhamento de Pedidos</h2>
+        <hr />
+        <br />
+
+        <div class="col-md-4">
+
+            <form asp-controller="Pedido" asp-action="Index" method="post">
+                <div class="form-group mb-2">
+                    <label asp-for="Numero" class="control-label"></label>
+                    <input asp-for="Numero" class="form-control" readonly="readonly" />
+                </div>
+                <div class="form-group mb-2">
+                    <label asp-for="Data" class="control-label"></label>
+                    <input asp-for="Data" class="form-control" readonly="readonly" />
+                </div>
+                <div class="form-group mb-2">
+                    <label asp-for="Valor" class="control-label"></label>
+                    <input asp-for="Valor" class="form-control" readonly="readonly" />
+                </div>
+                <div class="form-group mb-2">
+                    <label asp-for="Status" class="control-label"></label>
+                    <select asp-for="Status" asp-items="status" class="form-control"></select>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="submit" value="Atualizar" class="btn btn-outline-success" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

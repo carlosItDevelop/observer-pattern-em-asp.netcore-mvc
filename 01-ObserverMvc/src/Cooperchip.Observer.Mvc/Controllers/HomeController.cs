@@ -16,6 +16,7 @@ namespace Cooperchip.Observer.Mvc.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Home Acessada!");
             return View();
         }
 
